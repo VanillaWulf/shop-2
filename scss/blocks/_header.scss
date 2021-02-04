@@ -1,0 +1,44 @@
+.header {
+    background-color: $black-color;
+
+    &__icon {
+        fill: $gray-color;
+    }
+
+    &__wrapper {
+        min-height: 75px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    &__logo-wrapper {
+        display: flex;
+        align-items: center;
+    }
+    
+    &__logo {
+        margin: 0 41px 0 0;
+    }
+    
+    &__list {
+        display: flex;
+    }
+    
+    &__navigation {
+        display: none;
+    }
+    
+    .header__button {
+        background-color: transparent;
+        border: none;
+        margin: 0 0 0 33px;
+
+        &:hover .header__icon {
+            fill: red;
+            cursor: pointer;
+        }
+    }
+}
+
+
