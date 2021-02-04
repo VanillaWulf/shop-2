@@ -1,0 +1,25 @@
+.intro {
+    display: flex;
+
+    .intro__heading-wrapper {
+        width: 100%;
+        background-color: $pink-color;
+        display: flex;
+        align-items: center;
+        padding: 0 0 0 40px;
+    }
+    
+    .intro__heading {
+        @include font(48px, 58px, 900);
+        text-transform: uppercase;
+    }
+    
+    .intro__text {
+        @include font(32px, 38px, 700);
+        display: block;
+    }
+    
+    .intro__pink {
+        color: $pink-dark-color;
+    }
+}
