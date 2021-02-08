@@ -5,10 +5,22 @@
     padding: 64px 0 0;
     margin-bottom: 0 0 98px;
 
+    @include tablet {
+        padding: 19px 0 155px;
+    }
+
     .stock__item {
-        width: 360px;
+        width: 32%;
         min-height: 360px;
         background-image: url(../img/stock-img-1.jpg);
+
+        @include tablet {
+            min-height: 168px;
+        }
+
+        @include mobile {
+            width: 100%;
+        }
 
         &--man {
             background-image: url(../img/stock-img-2.jpg);

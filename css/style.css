@@ -18,8 +18,18 @@ body {
 }
 
 .container {
-  width: 1140px;
+  width: 71.3%;
   margin: 0 auto;
+}
+
+.display-block {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 92%;
+  }
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -118,6 +128,12 @@ table {
   cursor: pointer;
 }
 
+@media (max-width: 375px) {
+  .mobile-hide {
+    display: none;
+  }
+}
+
 .intro {
   display: flex;
 }
@@ -130,12 +146,36 @@ table {
   padding: 0 0 0 40px;
 }
 
+@media (max-width: 375px) {
+  .intro .intro__heading-wrapper {
+    min-height: 363px;
+  }
+}
+
 .intro .intro__heading {
   font-size: 48px;
   line-height: 58px;
   font-weight: 900;
   font-style: normal;
   text-transform: uppercase;
+}
+
+@media (max-width: 1600px) {
+  .intro .intro__heading {
+    font-size: 44px;
+    line-height: 53px;
+    font-weight: 900;
+    font-style: normal;
+  }
+}
+
+@media (max-width: 375px) {
+  .intro .intro__heading {
+    font-size: 38px;
+    line-height: 46px;
+    font-weight: 900;
+    font-style: normal;
+  }
 }
 
 .intro .intro__text {
@@ -146,8 +186,28 @@ table {
   display: block;
 }
 
+@media (max-width: 1600px) {
+  .intro .intro__text {
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 400;
+    font-style: normal;
+  }
+}
+
 .intro .intro__pink {
   color: #F16D7F;
+}
+
+.intro .intro__img {
+  width: 50%;
+  height: auto;
+}
+
+@media (max-width: 375px) {
+  .intro .intro__img {
+    display: none;
+  }
 }
 
 .stock__list {
@@ -158,10 +218,28 @@ table {
   margin-bottom: 0 0 98px;
 }
 
+@media (max-width: 1600px) {
+  .stock__list {
+    padding: 19px 0 155px;
+  }
+}
+
 .stock__list .stock__item {
-  width: 360px;
+  width: 32%;
   min-height: 360px;
   background-image: url(../img/stock-img-1.jpg);
+}
+
+@media (max-width: 1600px) {
+  .stock__list .stock__item {
+    min-height: 168px;
+  }
+}
+
+@media (max-width: 375px) {
+  .stock__list .stock__item {
+    width: 100%;
+  }
 }
 
 .stock__list .stock__item--man {
